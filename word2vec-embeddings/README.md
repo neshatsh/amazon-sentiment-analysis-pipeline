@@ -1,4 +1,4 @@
-#Word2Vec Word Embeddings for Sentiment Analysis
+# Word2Vec Word Embeddings for Sentiment Analysis
 
 # Overview
 
