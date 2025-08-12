@@ -1,0 +1,39 @@
+Analysis of Word2Vec Similarities
+
+
+=== WORD SIMILARITY RESULTS ===
+
+Words most similar to "good":
+1. great: 0.740  
+2. decent: 0.699  
+3. Good: 0.643  
+4. wonderful: 0.638  
+5. superb: 0.622  
+6. bad: 0.610  
+7. nice: 0.606  
+8. excellent: 0.604  
+9. dream: 0.601  
+10. SOG: 0.596  
+     
+Words most similar to "bad":
+
+1. fake: 0.735  
+2. terrible: 0.667  
+3. bad.: 0.651  
+4. dud: 0.644  
+5. shocking: 0.626  
+6. offensive: 0.620  
+7. ain't: 0.612  
+8. good: 0.610  
+9. horrible: 0.602  
+10. Cute: 0.601  
+
+
+=== ANALYSIS ===
+
+The words most similar to “good” are generally positive in sentiment, including terms such as “great,” “wonderful,” “excellent,” and “nice.”
+Similarly, the words most similar to “bad” are largely negative, such as “fake,” “terrible,” and “horrible.” However, several words in each group diverge from the expected sentiment pattern.
+For instance, “bad” appears in the “good” list, and “good,” “Cute,” and “inspiring” appear in the “bad” list. This suggests that these words often occur in similar syntactic contexts, despite having opposite meanings.
+One example from the training data helps illustrate this: “Not a very good game, even for the PS2.” Despite including the word “good,” the sentence expresses a negative sentiment overall.
+This reflects the fact that Word2Vec captures semantic similarity based on context rather than sentiment. Since the model learns word representations by examining neighboring words in the corpus,
+it can associate antonyms if they frequently appear in similar environments. As a result, Word2Vec can reflect nuanced patterns in usage, even when those patterns do not align strictly with sentiment polarity.
