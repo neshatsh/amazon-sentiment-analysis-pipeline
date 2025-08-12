@@ -1,4 +1,4 @@
-# Text Analytics Portfolio
+# Amazon Sentiment Analysis
 
 ## Overview
 
