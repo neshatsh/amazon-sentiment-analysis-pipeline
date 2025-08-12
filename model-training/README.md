@@ -79,4 +79,4 @@ pipeline = Pipeline([
 
 # Output
 
-## Results: results.csv with accuracy metrics for each configuration
+Results: `results.csv` with accuracy metrics for each configuration
