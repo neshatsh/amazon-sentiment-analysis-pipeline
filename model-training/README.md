@@ -73,9 +73,9 @@ pipeline = Pipeline([
 
 ## N-gram Configuration:
 
-- Unigrams only: ngram_range=(1,1)
-- Bigrams only: ngram_range=(2,2)
-- Combined: ngram_range=(1,2)
+- Unigrams only: `ngram_range=(1,1)`
+- Bigrams only: `ngram_range=(2,2)`
+- Combined: `ngram_range=(1,2)`
 
 # Output
 
