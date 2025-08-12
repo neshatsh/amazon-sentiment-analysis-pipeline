@@ -7,17 +7,17 @@ A complete text analytics pipeline for sentiment analysis on Amazon product revi
 
 ## The Pipeline
 
-1. data-preparation
+### 1. data-preparation
 
 Clean and tokenize 1.28M Amazon reviews. Creates train/test splits and handles stopwords.
 
-2. model-training
+### 2. model-training
 Multinomial Naive Bayes classification with different n-gram features. Traditional ML baseline.
 
-3. word2vec-embeddings
+### 3. word2vec-embeddings
 Train word embeddings and analyze semantic similarities between sentiment words.
 
-4. fully-connected-neural-network-classifier
+### 4. fully-connected-neural-network-classifier
 PyTorch neural networks using Word2Vec features. Experiments with different activation functions and regularization.
 
 
