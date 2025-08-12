@@ -1,0 +1,4 @@
+Activation Function,L2 Regularization,Dropout Rate,Validation Accuracy,Test Accuracy
+relu,0.001,0.5,0.7507,0.7503
+sigmoid,0.001,0.3,0.735,0.733125
+tanh,0.001,0.3,0.7444,0.7475

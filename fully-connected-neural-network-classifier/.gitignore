@@ -1,0 +1,68 @@
+# MSCI 641 Assignment .gitignore
+
+# Data files
+data/
+embeddings/
+*.csv
+*.txt
+!requirements.txt
+*.json
+# Keep model_ids.json
+!a4_model_ids.json
+!a4_best_model.json
+# Keep results.csv
+!results.csv
+!hyperparameter_tuning.csv
+# Keep GitHub Classroom files
+!.github/**/*.json
+# Allow autograder test data
+!.github/test_data/
+!.github/test_data/*.csv
+
+# Model files
+models/
+*.pkl
+*.joblib
+*.model
+downloaded_models/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.vs/
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+temp/
+tmp/
