@@ -1,8 +1,8 @@
-## Overview
+# Overview
 
 A comprehensive sentiment classification system using Multinomial Naive Bayes (MNB) classifiers on Amazon product reviews. This implementation explores the impact of different text preprocessing strategies (stopword handling) and feature extraction techniques (unigrams, bigrams, and their combinations) on classification performance.
 
-## Features
+# Features
 
 - Multiple Feature Configurations: Unigrams, bigrams, and combined unigram+bigram features
 - Preprocessing Comparison: Evaluates performance with and without stopword removal
@@ -11,9 +11,9 @@ A comprehensive sentiment classification system using Multinomial Naive Bayes (M
 - Scalable Implementation: Handles large datasets efficiently using scikit-learn
 - Reproducible Results: Consistent model training and evaluation metrics
 
-### Quick Start
+# Quick Start
 
-# 1. Setup environment
+## 1. Setup environment
 
 ```bash
 python -m venv venv
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ```
 
-# 2. Prepare Data
+## 2. Prepare Data
 
 This project requires preprocessed data from the data preparation pipeline. Ensure you have:
 ```bash
@@ -36,32 +36,32 @@ data/
 
 ```
 
-# 3. Run Classification
+## 3. Run Classification
 
 ```bash
 python main.py
 ```
 
-## Model Configurations
+# Model Configurations
 
 The system trains and evaluates 6 different classifier configurations:
 
-# Without Stopword Removal
+## Without Stopword Removal
 
 1. Unigrams Only - Single word features
 2. Bigrams Only - Two consecutive word features
 3. Unigrams + Bigrams - Combined single and two-word features
 
-# With Stopword Removal
+## With Stopword Removal
 
 4. Unigrams Only - Single word features, stopwords filtered
 5. Bigrams Only - Two consecutive word features, stopwords filtered
 6. Unigrams + Bigrams - Combined features, stopwords filtered
 
 
-### Implementation
+# Implementation
 
-# Core Pipeline:
+## Core Pipeline:
 
 ```bash
 # For each configuration:
@@ -71,7 +71,7 @@ pipeline = Pipeline([
 ])
 ```
 
-# N-gram Configuration:
+## N-gram Configuration:
 
 - Unigrams only: ngram_range=(1,1)
 - Bigrams only: ngram_range=(2,2)
@@ -79,4 +79,4 @@ pipeline = Pipeline([
 
 # Output
 
-# Results: results.csv with accuracy metrics for each configuration
+## Results: results.csv with accuracy metrics for each configuration
